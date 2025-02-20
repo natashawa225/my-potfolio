@@ -1,0 +1,509 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(30, 41, 59, 0.8);
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #22d3ee;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #22d3ee;
+}
+
+.section {
+    display: flex;
+    height:100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    animation: slideInFromTop 1s ease-out;
+}
+
+
+.main-container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    max-width: 90%;
+    max-width: 800px;
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.main-left {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    padding: 40px 8px;
+}
+#main p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+#main h1 {
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 10px;
+    background: linear-gradient(45deg, #081c15, #1b4332, #2d6a4f, #40916c, #52b788, #74c69d); /* Gradient colors */
+    background-size: 400% 400%;
+    -webkit-background-clip: text; /* Make the background clip to text */
+    -webkit-text-fill-color: transparent; /* Make the text itself transparent so the gradient shows through */
+    animation: gradientAnimation 5s ease infinite;
+}
+#main a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 1.1em;
+}
+.main-social {
+    margin-top: 20px;
+}
+
+.main-social a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #007bff;
+    width: 1rem;
+    height: 1rem;
+    gap: 20px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.main-social a:hover {
+    text-decoration: underline;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 10em; 
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-btn {
+    background-color: #22d3ee;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.contact-btn:hover {
+    background: #14b8a6;
+    transition: all 0.5s ease-in-out;
+}
+
+.about-me-desc p{
+    background: #22d3ee;
+    padding: 20px;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left column: About Me and Contact Info */
+.about-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me {
+    margin-bottom: 20px;
+}
+
+.about-me h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Contact Information Section */
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-info .location, .contact-info .email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info .social {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-info .icon {
+    width: 25px;
+    height: 25px;
+}
+
+/* Right column: Education and Skills */
+.about-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-me, .contact-info, .education, .skills {
+    background-color: #f8fafc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education h2, .skills h2 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.education p, .skills ul {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.skills ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.skills ul li {
+    margin-bottom: 8px;
+}
+
+h2{
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-weight: bolder;
+    background: linear-gradient(45deg, #081c15, #1b4332, #2d6a4f, #40916c, #52b788, #74c69d); /* Gradient colors */
+    background-size: 400% 400%;
+    -webkit-background-clip: text; /* Make the background clip to text */
+    -webkit-text-fill-color: transparent; /* Make the text itself transparent so the gradient shows through */
+    animation: gradientAnimation 5s ease infinite;
+}
+
+#skills{
+    height: 80vh;
+}
+
+.skill-icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg,#2d6a4f, #40916c, #52b788, #74c69d); /* Gradient colors */
+    background-size: 400% 400%;
+    animation: gradientAnimation 5s ease infinite;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    justify-content: center;
+}
+
+.card {
+    width: 18rem;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.card-body a {
+    margin-top: 10px;
+    margin-right: 5px;
+    background-color: #22d3ee; 
+    color: white;             
+    border: none;              /* Remove default border */
+    padding: 10px 20px;        /* Add padding to buttons */
+    text-align: center;        /* Center text */
+    border-radius: 5px;        /* Rounded corners for buttons */
+    transition: background-color 0.3s ease-in-out; /* Add smooth transition */
+}
+
+footer {
+    text-align: left;
+    padding: 20px;
+    background-color: #1e293b;
+    color: white;
+    position: relative;
+}
+
+footer h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Zoom effect on hover */
+    opacity: 0.8;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: #1e293b;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        grid-template-columns: 1fr;
+        max-width: 100%; 
+    }
+
+    .main-left {
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .logo-container {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20px;             
+    }
+    .card {
+        width: 90%;            
+    }
+    .social-links {
+        gap: 15px;
+    }
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+    footer {
+        text-align: center;
+        padding: 40px 20px;
+    }
+    .social-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .contact-btn {
+        padding: 8px 16px;
+    }
+
+    .about-me-desc p {
+        padding: 15px;
+    }
+
+    .skill {
+        flex-wrap: nowrap;
+        padding: 12px;
+    }
+
+    .card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    footer h3 {
+        font-size: 1.2rem;
+    }
+
+    .social-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 680px) {
+    .main {
+        width: 100%;
+        display: block;
+        margin: 30px;
+        text-align: justify;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-card {
+        margin-bottom: 20px;
+    }
+
+    .skill-icons {
+        margin: 30px;
+        text-align: justify;
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+        align-items: center;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    *,*:before,*:after {
+        animation-duration: .01ms!important;
+        animation-iteration-count: 1!important;
+        transition-duration: .01ms!important;
+        scroll-behavior: smooth!important
+    }
+}
+
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
