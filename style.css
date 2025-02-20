@@ -21,6 +21,7 @@ nav {
     display: flex;
     justify-content: space-between;
     z-index: 100;
+    transition: all 0.5s ease-in-out;
 }
 
 nav .logo {
@@ -205,8 +206,7 @@ nav ul li a:hover {
     width: 25px;
     height: 25px;
 }
-
-/* Right column: Education and Skills */
+/* right section */
 .about-right {
     display: flex;
     flex-direction: column;
