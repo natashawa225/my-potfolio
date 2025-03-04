@@ -12,8 +12,15 @@ body {
 }
 
 /* desktop nav */
+#desktop-nav{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+}
 nav .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     background: linear-gradient(45deg, #2D336B, #5C7285, #7781a9, #A9B5DF, #7886C7, #7886C7); /* Gradient colors */
     background-size: 400% 400%;
@@ -41,26 +48,21 @@ nav, .nav-links {
     display: flex;
 }
   
-  nav {
-    justify-content: space-around;
-    align-items: center;
-    height: 17vh;
-  }
-  
-  .nav-links {
+.nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 1.5rem;
-  }
+    font-size: 1rem;
+}
   
-  nav ul {
-      display: flex;
-      list-style: none;
-  }
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
   
-  nav ul li {
-      margin: 0 15px;
-  }
+nav ul li {
+    margin: 0 15px;
+}
   
   
 nav ul li a {
@@ -164,9 +166,10 @@ nav ul li a:hover {
     min-height: 100vh;
     max-width: 1200px;
     margin: auto;
-    padding: 1rem 6rem;
+    padding: 1rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    padding: 10rem 1rem 5rem 1rem;
     gap: 4rem;
     animation: slideInFromTop 1s ease-out;
 }
@@ -204,7 +207,7 @@ nav ul li a:hover {
     line-height: 1.5rem;
     font-size: 1.8rem;
     color: var(--text-light);
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .socials{
@@ -220,14 +223,13 @@ nav ul li a:hover {
 }
 
 .pic-container{
-    display: flex;
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
+    display: grid;
+    place-items: center;
 }
 
 .pic-container img{
-    border-radius: 50%;
+    width: min(25rem, 90%);
+    border-radius: 100%;
 }
 
 .btn-main{
@@ -469,28 +471,6 @@ button {
   transition: all 300ms ease;
 }
 
-
-/* footer {
-    text-align: left;
-    padding: 20px;
-    background-color: #1e293b;
-    color: white;
-    position: relative;
-}
-
-footer h3 {
-    height: 26vh;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-} */
-/* footer {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    background-color: #1e293b;
-    color: white;
-} */
 @media screen and (max-width: 1400px) {
     #hamburger-nav {
         display: none;
@@ -508,19 +488,9 @@ footer h3 {
 }
 
 @media screen and (max-width: 1200px) {
-    #desktop-nav {
-      display: none;
-    }
-
-    #hamburger-nav {
-        display: flex;
-    }
     
     #main{
         display: block;
-    }
-    section, .section-container {
-        height: fit-content;
     }
     .about-containers {
     margin-top: 0;
@@ -558,14 +528,7 @@ footer h3 {
     .experience-sub-title {
       font-size: 1.25rem;
     }
-    .logo {
-      font-size: 1.5rem;
-    }
-    .nav-links {
-      flex-direction: column;
-      gap: 0.5rem;
-      text-align: center;
-    }
+    
     .section__pic-container {
       width: auto;
       height: 46vw;
@@ -581,56 +544,15 @@ footer h3 {
       text-align: justify;
     }
   }
-/* @media (max-width: 768px) {
 
-    .main-container {
-        padding: 10rem 1rem 5rem 1rem;
-        text-align: center;
-        grid-template-columns: repeat(1, 1fr);
-    }
-
-    .pic-container {
-        grid-area: 1/1/2/2;
-    }
-    
-    .btn-main {
-        margin: auto;
-    }
-
-    .logo-container {
+@media (max-width: 750px) {
+    #desktop-nav{
         display: none;
     }
-
-    .container {
-        flex-direction: column;
-        gap: 20px;             
-    }
-    .card {
-        width: 90%;            
-    }
-    .social-links {
-        gap: 15px;
-    }
-    .social-icon {
-        width: 35px;
-        height: 35px;
-    }
-    footer {
-        text-align: center;
-        padding: 40px 20px;
-    }
-    .social-links {
+    #hamburger-nav {
         display: flex;
-        flex-direction: column;
-        gap: 10px;
     }
 
-    .social-icon {
-        width: 35px;
-        height: 35px;
-    }
-} */
-@media (max-width: 680px) {
     #main {
         height:83vh;
         margin-bottom: 0;
@@ -640,22 +562,25 @@ footer h3 {
         text-align: justify;
     }
 
-    .nav-links {
-        flex-direction: column;
-        gap: 0.5rem;
+    .main-container {
+        padding: 10rem 1rem 5rem 1rem;
         text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    
+    .pic-container {
+        grid-area: 1/1/2/2;
     }
+    
+      .socials {
+        margin: auto;
+      }
 
 }
 @media (max-width: 480px) {
 
     .contact-btn {
         padding: 8px 16px;
-    }
-
-    .card {
-        width: 100%;
-        padding: 15px;
     }
 
     footer h3 {
