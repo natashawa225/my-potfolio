@@ -20,61 +20,68 @@ body {
     align-items: center;
 }
 nav .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     background: linear-gradient(45deg, #2D336B, #5C7285, #7781a9, #A9B5DF, #7886C7, #7886C7); /* Gradient colors */
     background-size: 400% 400%;
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
     animation: gradientAnimation 5s ease infinite;
-}
+  }
   
-a {
+  a {
     color: black;
     text-decoration: none;
     text-decoration-color: white;
-}
-a:hover {
-    color: #2D336B;
-    text-decoration: underline;
-    text-underline-offset: 1rem;
-    text-decoration-color: #2D336B;
-}
-nav .logo:hover {
-    cursor: default;
-}
+  }
+  a:hover {
+      color: #2D336B;
+      text-decoration: underline;
+      text-underline-offset: 1rem;
+      text-decoration-color: #2D336B;
+  }
   
-nav, .nav-links {
+  nav .logo:hover {
+      cursor: default;
+  }
+  
+  nav,
+  .nav-links {
     display: flex;
-}
+  }
   
-.nav-links {
+  nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+  }
+  
+  .nav-links {
     gap: 2rem;
     list-style: none;
-    font-size: 1rem;
-}
+    font-size: 1.5rem;
+  }
   
-nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
+  nav ul {
+      display: flex;
+      list-style: none;
+  }
   
-nav ul li {
-    margin: 0 15px;
-}
+  nav ul li {
+      margin: 0 15px;
+  }
   
   
-nav ul li a {
-    text-decoration: none;
-    color: #1e2738;
-    transition: color 0.3s;
-}
+  nav ul li a {
+      text-decoration: none;
+      color: #1e2738;
+      transition: color 0.3s;
+  }
   
-nav ul li a:hover {
-    color: linear-gradient(45deg, #081c15, #1b4332, #2d6a4f, #40916c, #52b788, #74c69d);
-}
-
+  nav ul li a:hover {
+      color: linear-gradient(45deg, #081c15, #1b4332, #2d6a4f, #40916c, #52b788, #74c69d);
+  }
+  
 /* HAMBURGER MENU */
 
 #hamburger-nav {

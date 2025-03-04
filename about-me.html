@@ -12,13 +12,29 @@
 </head>
 <body>
     <header>
-        <nav id="dekstop-nav">
+        <nav id="desktop-nav">
             <div class="logo">Natasha Wilfrid</div>
-            <ul class="nav-links">
-                <li><a href="./main.html">Home</a></li>
+              <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
                 <li><a href="./about-me.html">About</a></li>
-                <li><a href="./main.html#projects">Projects</a></li>
-            </ul>
+                <li><a href="#projects">Projects</a></li>
+              </ul>
+        </nav>
+    
+        <nav id="hamburger-nav">
+            <div class="logo">Natasha Wilfrid</div>
+            <div class="hamburger-menu">
+              <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="menu-links">
+                <li><a href="./index.html" onclick="toggleMenu()">Home</a></li>
+                <li><a href="./about-me.html" onclick="toggleMenu()">About</a></li>
+                <li><a href="./index.html#projects" onclick="toggleMenu()">Projects</a></li>
+              </div>
+            </div>
         </nav>
     </header>
 	<div class="container-fluid">
