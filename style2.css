@@ -1,0 +1,324 @@
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    background-color: var(--bs-body-bg);
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/*desktop-nav*/
+
+nav .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  background: linear-gradient(45deg, #2D336B, #5C7285, #7781a9, #A9B5DF, #7886C7, #7886C7); /* Gradient colors */
+  background-size: 400% 400%;
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  animation: gradientAnimation 5s ease infinite;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+a:hover {
+    color: #2D336B;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: #2D336B;
+}
+
+nav .logo:hover {
+    cursor: default;
+}
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #1e2738;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: linear-gradient(45deg, #081c15, #1b4332, #2d6a4f, #40916c, #52b788, #74c69d);
+}
+
+/*resume content*/
+
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: 1px solid;
+  opacity: 0.25;
+}
+
+/* ============= Resume Page  ============= */
+.resume-wrapper {
+    margin-top: 90px;
+    position: relative;
+    padding-top: calc(75px + 1rem);
+    border: 2px solid black;
+}
+  
+.resume-profile-pic {
+  max-width: 160px;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+  top: -80px;
+  border: 8px solid #1e2738;
+  border-radius: 50%;
+}
+  
+  .resume-name {
+    letter-spacing: 0.5rem;
+    font-size: 2.25rem;
+    color: black;
+    font-weight: 900;
+  }
+  
+  .resume-role-title {
+    font-size: 1.125rem;
+    letter-spacing: 0.25rem;
+    color: #7886C7;
+    font-weight: 500;
+  }
+  
+  .resume-body .col-main {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .resume-section {
+    margin-bottom: 2rem;
+  }
+  
+  .resume-section-heading {
+    font-size: 1.125rem;
+    letter-spacing: 0.15rem;
+    color: black;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+  }
+  
+  .resume-section-heading-icon {
+    background: #2D336B;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 38px;
+    height: 38px;
+    padding-left: 0.15rem;
+    background: rgba(0, 0, 0, 0.15);
+    font-size: 1.125rem;
+    color: black;
+  }
+  
+  .resume-contact {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem;
+    font-size: 0.875rem;
+  }
+  
+  .resume-contact-icon {
+    font-size: 1.125rem;
+    vertical-align: middle;
+  }
+
+  .resume-body{
+    padding: 1.5rem;
+  }
+
+  @media(min-width:992px){
+    .resume-body {
+        padding: 3rem;
+    }
+  }
+  
+  .resume-timeline {
+    padding-left: 2.5rem;
+  }
+
+  .resume-timeline:before {
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    left: 13px;
+    top: 16px;
+    position: absolute;
+  }
+  
+  .resume-position-meta {
+    font-size: 0.75rem;
+    margin-bottom: 0.25rem;
+    justify-content: space-between;
+  }
+  
+  .resume-company-name {
+    background: #7886C7;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 0.25rem;
+    font-weight: 600;
+  }
+  
+  .resume-position-title {
+    font-size: 1.125rem;
+    margin-bottom: 0.25rem;
+    color: black;
+  }
+  
+  .resume-timeline-item:before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: -30px;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #2D336B;
+    background: #2D336B;
+    border-radius: 50%;
+  }
+  
+  .resume-timeline-list {
+    padding-left: 1rem;
+  }
+  .resume-timeline-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .resume-degree {
+    color: black;
+    font-weight: bold;
+    font-size: 0.875rem;
+  }
+  
+  .resume-degree-org {
+    font-size: 0.85rem;
+  }
+  
+  .resume-degree-time {
+    font-size: 0.85rem;
+  }
+
+  
+  .resume-skill-name {
+    margin-bottom: 0.25rem;
+    color: black;
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+
+  .resume-progress {
+    border-radius: 0.25rem;
+    height: 0.3rem;
+    background: #19202e;
+    margin-bottom: 1rem;
+  }
+  
+  .resume-progress-bar {
+    border-radius: 0.25rem;
+    background-color: #8497bc;
+  }
+  
+  .resume-skill-badge {
+    background: #19202e;
+    background: #7886C7;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 0.5rem 0.65rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .resume-lang-name {
+    font-weight: bold;
+    color: black;
+    font-size: 0.875rem;
+  }
+  
+  .resume-level-indicator {
+    margin-top: 2px;
+  }
+  .resume-level-indicator .item {
+    width: 85%;
+    min-height: 10px;
+    border-radius: 2px;
+    display: inline-block;
+    background: #19202e;
+    position: relative;
+  }
+  .resume-level-indicator .item:last-child {
+    margin-right: 0;
+  }
+  .resume-level-indicator .item.item-full {
+    background: #8497bc;
+  }
+  .resume-level-indicator .item.item-half:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #8497bc;
+  }
+  
+  .mb-2 {
+    margin-bottom: 0.5rem !important;
+}
+
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

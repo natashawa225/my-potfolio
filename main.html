@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natasha Wilfrid Atmadja - Web Developer Portfolio</title>
     <link rel="stylesheet" href ="./style.css"/>
@@ -11,183 +12,129 @@
 </head>
 <body>
     <header>
-        <nav id="desktop-nav">
-            <div class="logo">Natasha Wilfrid</div>
-            <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-            </ul>
-        </nav>
+      <nav id="dekstop-nav">
+        <div class="logo">Natasha Wilfrid</div>
+          <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="./about-me.html">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+      </nav>
 
-        <nav id="hamburger-nav">
-            <div class="logo">Natasha Wilfrid</div>
-            <div class="hamburger-menu">
-              <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-              <div class="menu-links">
-                <li><a href="#hero" onclick="toggleMenu()">Home</a></li>
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-              </div>
-            </div>
-          </nav>
-
+      <nav id="hamburger-nav">
+        <div class="logo">Natasha Wilfrid</div>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#hero" onclick="toggleMenu()">Home</a></li>
+            <li><a href="./about-me.html" onclick="toggleMenu()">About</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          </div>
+        </div>
+      </nav>
     </header>
-
-    <div id="main" class="section">
+    <section id="main">
         <div class="main-container">
             <div class="main-left">
-                <h1>Natasha Wilfrid</h1>
-            <p>I'm a dedicated culture critic and blogger located in San Francisco, California.</p>
-            
-            
-            <div class="btn-main">
-                <div class="btn">Download CV</div>
-                <div class="btn">Contact</div>
-            </div>
-
-            <a href="mailto:natasha.atmadja2@gmail.com">natasha.atmadja2@gmail.com</a>
-            <div class="main-social">
-                <a href="https://github.com/yourusername" target="_blank">
-                    <img src="./media/25231.png" alt="GitHub" class="social-icon">
-                </a>
+                <p class="hello">HELLO</p>
+                <h1 class="title">
+                  I'm <span>Natasha Wilfrid<br />a</span> Web Developer
+                </h1>
                 
-                <a href="https://www.linkedin.com/in/natasha-wilfrid-3230422b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
-                " target="_blank">
-                    <img src="./media/61109.png" alt="LinkedIn" class="social-icon">
-                </a> 
-            </div>
-        </div>
-        <div class="pic-container">
-        <img src="./media/profile_picture.png" alt="Location";/> </div>
-        </div>
-    </div>
+                <p>I'm a web developer</p>
 
-    <section id="about" class="section">
-        <div class="about-container">
-            <div class="about-left">
-                <div class="about-me">
-                    <h2>About Me</h2>
-                    <p>Hello! I'm Natasha, a passionate web developer specializing in front-end technologies. I am an Information and Computing Science major at XJTLU with a strong foundation in web development, including HTML, CSS, JavaScript, and frameworks like React. I enjoy building clean, responsive, and interactive websites.</p>
-                </div>
-    
-                <div class="contact-info">
-                    <div class="location">
-                        <img src="location-icon.png" alt="Location" class="icon"> 
-                        <span>San Francisco, California</span>
+                <div class="socials">
+                    <div class="btn-main">
+                        <button class="button1">Portfolio</button>
+                        <button class="button2">Contact</button>
                     </div>
-                    <div class="email">
-                        <img src="email-icon.png" alt="Email" class="icon">
-                        <span>natasha.atmadja2@gmail.com</span>
-                    </div>
-                    <div class="social">
+                    <div class="main-social">
                         <a href="https://github.com/yourusername" target="_blank">
-                            <img src="github-icon.png" alt="GitHub" class="icon">
+                        <img src="./media/github(b).png" alt="GitHub" class="social-icon">
                         </a>
-                        <a href="https://www.linkedin.com/in/yourusername" target="_blank">
-                            <img src="linkedin-icon.png" alt="LinkedIn" class="icon">
+                
+                        <a href="https://www.linkedin.com/in/natasha-wilfrid-3230422b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+                        " target="_blank">
+                        <img src="./media/linkedin(b).png" alt="LinkedIn" class="social-icon">
                         </a>
                     </div>
                 </div>
             </div>
-    
-            <div class="about-right">
-                <div class="education">
-                    <h2>Education</h2>
-                    <p>Bachelor's Degree in Information and Computing Science</p>
-                    <p>Xi'an Jiaotong-Liverpool University, Suzhou, China</p>
-                </div>
-    
-                <div class="skills">
-                    <h2>Skills</h2>
-                    <div class="skill-icons">
-                        <div class="skill">HTML</div>
-                        <div class="skill">CSS</div>
-                        <div class="skill">JavaScript</div>
-                        <div class="skill">Java</div>
-                        <div class="skill">JavaFX</div>
-                    </div>
-                </div>
+            <div class="pic-container">
+                <img src="./media/profile_picture.png" alt="Location";/> 
             </div>
         </div>
-    </section>
-    
-
-    <!-- <section id="about" class="section">
-        <h2>About Me</h2>
-        <div class="about-me-desc"><p>Hello! I'm Natasha, a passionate developer specializing in web technologies. I am an Information and Computing Science 
-            major at XJTLU with a strong foundation in programming and web development. Skilled in languages such as Python, Java, 
-            and MySQL, I also have hands-on experience in creating applications and websites using HTML, CSS, JavaScript, JavaFX, and various frameworks. 
-            I am eager to learn and apply technology to solve real-world problems. In addition to my technical skills, I have experience in research and project management, 
-            which allows me to approach challenges with both analytical and creative solutions. 
-        </p></div>
-    </section> -->
+      </div>
 
     <section id="projects" class="section">
-        <section class="project-container">
-            <div class="header"><h2>My Projects</h2></div>
-            <div class="projects">
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Portfolio Website</h5>
-                      <p class="card-text">This project showcases my portfolio website, which I built using a combination of HTML, CSS, and JavaScript</p>
-                    </div>
-                    <div class="card-body">
-                        <a class="btn btn-primary" href="#" role="button">Visit</a>
-                        <a class="btn btn-primary" href="#" role="button">GitHub</a>
-                    </div>
-                </div>
-        
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Quiz Application</h5>
-                      <p class="card-text">This is a quiz application built with JavaFX and Java. It features user authentication, question selection from XML files, and stores user data in CSV files. The app also includes a scoreboard to track and display results</p>
-                    </div>
-                    
-                    <div class="card-body">
-                        <a class="btn btn-primary" href="#" role="button">Visit</a>
-                        <a class="btn btn-primary" href="#" role="button">GitHub</a>
-                    </div>
-                </div>
-        
-                <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Expense Tracker Application</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                    
-                    <div class="card-body">
-                        <a class="btn btn-primary" href="#" role="button">Visit</a>
-                        <a class="btn btn-primary" href="#" role="button">GitHub</a>
-                    </div>
-                </div>
-        
+      <p class="section_text_p1">Browse My Recent</p>
+      <p class="title">Projects</p>
+      <div class="projects-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-1.png" alt="Project 1" class="project-img"/>
             </div>
-    
-        </section>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-main">
+              <button class="project-btn" onclick="location.href='https:/github.com'">Github</button>
+              <button class="project-btn" onclick="location.href='https:/github.com'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-2.png" alt="Project 2" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-main">
+              <button class="project-btn" onclick="location.href='https://github.com/'">Github</button>
+              <button class="project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img src="./assets/project-3.png" alt="Project 3" class="project-img"/>
+            </div>
+            <h2 class="experience-sub-title project-title ">Project Three</h2>
+            <div class="btn-main">
+              <button class="project-btn" onclick="location.href='https://github.com/'">
+                Github </button>
+              <button class="project-btn" onclick="location.href='https://github.com/'"> Live Demo </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="contact-title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./media/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a class="contact-desc" href="mailto:natasha.atmadja2@gmail.com">natasha.atmadja2@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./media/linkedin(b).png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a class="contact-text" href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section> -->
     <footer>
-        <h3>Contact Me</h3>
-        <div class="social-links">
-        <a href="https://github.com/yourusername" target="_blank">
-            <img src="./media/github.png" alt="GitHub" class="social-icon">
-        </a>
-        
-        <a href="https://www.linkedin.com/in/yourusername" target="_blank">
-            <img src="./media/linkedin.png" alt="LinkedIn" class="social-icon">
-        </a> 
-    </div>
-</footer>
+      <p>Copyright &#169; 2025 Natasha Wilfrid. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
 
