@@ -290,15 +290,6 @@ nav .logo {
     transform: scale(1.1);
 }
 
-/* .icon {
-    cursor: pointer;
-    height: 2rem;
-}
-.arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
-} */
 
 /* PROJECTS SECTION */
 
@@ -420,7 +411,15 @@ nav .logo {
 }
 
 /* CONTACT */
-
+.section__text {
+    align-self: center;
+    text-align: center;
+}
+  
+.section__text p {
+    font-weight: 600;
+}
+    
 .section__text__p1 {
     text-align: center;
     color: rgb(85, 85, 85);
@@ -479,6 +478,15 @@ nav .logo {
 a,
 button {
   transition: all 300ms ease;
+}
+
+footer {
+    height: 26vh;
+    margin: 0 1rem;
+}
+  
+footer p {
+    text-align: center;
 }
 
 @media screen and (max-width: 1400px) {
