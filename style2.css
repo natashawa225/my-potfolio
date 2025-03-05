@@ -12,7 +12,7 @@ body {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/*desktop-nav*/
+/* desktop nav */
 #desktop-nav{
   max-width: 1200px;
   margin: auto;
@@ -21,7 +21,6 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
 nav .logo {
   font-size: 2rem;
   font-weight: bold;
@@ -398,7 +397,20 @@ hr {
   .mb-2 {
     margin-bottom: 0.5rem !important;
 }
+@media screen and (max-width: 1400px) {
+  #hamburger-nav {
+      display: none;
+  }
+}
 
+@media (max-width: 750px) {
+  #desktop-nav{
+      display: none;
+  }
+  #hamburger-nav {
+      display: flex;
+  }
+}
 
 @keyframes gradientAnimation {
     0% {
