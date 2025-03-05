@@ -533,17 +533,17 @@ footer p {
         width: 100%;
         display: block;
         align-items: center;
-        margin: 30px;
         text-align: justify;
     }
 
     .main-container {
-        padding: 5rem 2rem 7rem 2rem;
         align-items: center;
         text-align: center;
         grid-template-columns: 1fr;
     }
-    
+    .title {
+        font-size: 2rem;
+    }
     .pic-container {
         order: -1;
     }
@@ -593,9 +593,6 @@ footer p {
       justify-content: center;
     }
     
-    .title {
-      font-size: 2rem;
-    }
     .section__text__p1 {
         text-align: center;
         color: rgb(85, 85, 85);
