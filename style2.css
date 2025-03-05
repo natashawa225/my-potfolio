@@ -405,10 +405,10 @@ hr {
 
 @media (max-width: 750px) {
   #desktop-nav{
-      display: none;
+    display: none;
   }
   #hamburger-nav {
-      display: flex;
+    display: flex;
   }
 }
 
